@@ -1,0 +1,9 @@
+input {
+  width: 100%; 
+  background-color:bisque;
+}
+table{
+  padding: 1%;
+  width: 0%;
+  border: solid;
+}
