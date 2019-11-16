@@ -19,3 +19,14 @@
     }
   }
 )();*/
+function dis(num) {
+  document.getElementById("text").value=document.getElementById("text").value+num
+}
+function solve() {
+  var exp=document.getElementById("text").value;
+  
+  document.getElementById("text").value = eval(exp);
+}
+function clr() {
+  document.getElementById("text").value="";
+}
