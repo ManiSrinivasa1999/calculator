@@ -1,4 +1,4 @@
-(
+/*(
   document.onreadystatechange = () => {
     if(document.readyState === "complete") {
       const model = {
@@ -18,4 +18,4 @@
       controller.init();
     }
   }
-)();
+)();*/
