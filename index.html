@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Calculator</title>
-</head>
-<body>
-  <table border="1">
-    <tr>
-      <td colspan="3"><input type="text"  id="text" placeholder="0"></td>
-      <td><input type="button" value="c"></td><!--clear-->
-    </tr>
-    <tr>
-      <td><input type="button" value="9"></td>
-      <td><input type="button" value="8"></td>
-      <td><input type="button" value="7"></td>
-      <td><input type="button" value="/"></td>
-    </tr>
-    <tr>
-      <td><input type="button" value="6"></td>
-      <td><input type="button" value="5"></td>
-      <td><input type="button" value="4"></td>
-      <td><input type="button" value="-"></td>
-    </tr>
-    <tr>
-      <td><input type="button" value="3"></td>
-      <td><input type="button" value="2"></td>
-      <td><input type="button" value="1"></td>
-      <td><input type="button" value="+"></td>
-    </tr>
-    <tr>
-      <td><input type="button" value="."></td>
-      <td><input type="button" value="0"></td>
-      <td><input type="button" value="="></td>
-      <td><input type="button" value="*"></td>
-    </tr>
-  </table>
-  <script src="assets/js/calci.js"></script>
-  <link rel="stylesheet" href="assets/css/style.css">
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+  </head>
+  <body>
+    <!-- <h1>Calculator</h1> -->
+    <section class="hero is-dark is-fullheight">
+      <div class="hero-body">
+        <div class="container">          
+          <table>
+            <tr>
+              <td colspan="4">
+                <input type="text" id="solution" placeholder="">
+              </td>
+            </tr>
+            <tr>
+              <td><input type="button" name="numbers" value="9"></td>
+              <td><input type="button" name="numbers" value="8"></td>
+              <td><input type="button" name="numbers" value="7"></td>
+              <td><input type="button" value="+"></td>
+            </tr>
+            <tr>
+              <td><input type="button" name="numbers" value="6"></td>
+              <td><input type="button" name="numbers" value="5"></td>
+              <td><input type="button" name="numbers" value="4"></td>
+              <td><input type="button" value="-"></td>
+            </tr>
+            <tr>
+              <td><input type="button" name="numbers" value="3"></td>
+              <td><input type="button" name="numbers" value="2"></td>
+              <td><input type="button" name="numbers" value="1"></td>
+              <td><input type="button" name="numbers" value="*"></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="C" id="clear"></td>
+              <td><input type="button" name="numbers" value="0"></td>
+              <td><input type="button" value="=" id="eval"></td>
+              <td><input type="button" value="/"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="assets/js/calci.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </body>
 </html>

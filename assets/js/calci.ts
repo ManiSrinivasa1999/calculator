@@ -1,23 +1,30 @@
 (
   document.onreadystatechange = () => {
-    if(document.readyState === "complete") {
-      const model = {
-
-      };
-      const view = {
-        render: () => {
-
+    if (document.readyState === 'complete') {
+      const CLEAR = document.getElementById(
+          'clear') as HTMLTableColElement;
+      const SOLUTION = document.getElementById(
+          'solution') as HTMLInputElement;
+      const MODEL = {};
+      const VIEW = {
+        render: (): void => {
+          CLEAR.onclick = () => {
+            CONTROLLER.clear();
+          };
         },
         init: () => {
-
-        }
+          VIEW.render();
+        },
       };
-      const controller = {
+      const CONTROLLER = {
+        clear: () => {
+          SOLUTION.innerHTML = '0';
+        },
         init: () => {
-          view.init();
-        }
+          VIEW.init();
+        },
       };
-      controller.init();
+      CONTROLLER.init();
     }
   }
 )();

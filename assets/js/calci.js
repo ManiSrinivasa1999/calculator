@@ -1,17 +1,26 @@
 (document.onreadystatechange = function () {
     if (document.readyState === "complete") {
-        var model = {};
-        var view_1 = {
+        var CLEAR_1 = document.getElementById('clear');
+        var SOLUTION_1 = document.getElementById('solution');
+        var MODEL = {};
+        var VIEW_1 = {
             render: function () {
+                CLEAR_1.onclick = function () {
+                    CONTROLLER_1.clear();
+                };
             },
             init: function () {
+                VIEW_1.render();
             }
         };
-        var controller = {
+        var CONTROLLER_1 = {
+            clear: function () {
+                SOLUTION_1.innerHTML = '0';
+            },
             init: function () {
-                view_1.init();
+                VIEW_1.init();
             }
         };
-        controller.init();
+        CONTROLLER_1.init();
     }
 })();
