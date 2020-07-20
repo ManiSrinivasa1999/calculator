@@ -1,8 +1,8 @@
 {
   "name": "calculator",
   "version": "1.0.0",
-  "description": "Basic calculator",
-  "main": "assets/js/calci.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,20 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/ManiSrinivasa1999/calculator.git"
   },
-  "author": "Manisrinivasa",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ManiSrinivasa1999/calculator/issues"
   },
-  "homepage": "https://github.com/ManiSrinivasa1999/calculator#readme",
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.22.0",
-    "@typescript-eslint/parser": "^2.22.0",
-    "eslint": "^6.8.0",
-    "eslint-config-google": "^0.14.0",
-    "nodemon": "^2.0.2"
-  },
-  "dependencies": {
-    "typescript": "^3.8.3"
-  }
+  "homepage": "https://github.com/ManiSrinivasa1999/calculator#readme"
 }
